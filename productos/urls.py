@@ -5,5 +5,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 app_name = 'productos'
 
 urlpatterns = (
-    url(r'^', views.index, name = 'index'),
+    url(r'^$', views.index, name = 'index'),
+    url(r'^listaproductos/', views.listaproductos, name = 'listaproductos'),
+
 )
